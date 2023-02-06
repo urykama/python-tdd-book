@@ -1,5 +1,12 @@
 from django.db import models
 
+
+class List(models.Model):
+    # text = models.TextField(default='')
+    pass
+
+
 class Item(models.Model):
     text = models.TextField(default='')
-    pass
+    list = models.ForeignKey(List, default=None)
+

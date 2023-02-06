@@ -64,8 +64,8 @@ class NewVisitorTest(LiveServerTestCase):
         # time.sleep(1)
 
         # The page updates again, and now shows both items on her list
-        self.wait_for_row_in_list_table('1: Buy peacock feathers')
         self.wait_for_row_in_list_table('2: Use peacock feathers to make a fly')
+        self.wait_for_row_in_list_table('1: Buy peacock feathers')
 
         # Satisfied, she goes back to sleep   Удовлетворенная, она снова засыпает
 
